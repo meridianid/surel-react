@@ -1,5 +1,5 @@
 # Surel, with React.js
-> Generating Emails with React
+> Generating Emails with React, cloned from [chromakode/react-html-email][react-html-email]
 
 This is an example project you can use to generate emails with React. You can start by reading the article [here](https://building.lang.ai/how-to-build-emails-with-react-fcf941b125d1).
 
@@ -25,7 +25,7 @@ $ yarn build
 $ yarn example
 ```
 
-The result html will be saved in the emails directory. Here is what it looks
+The result html will be saved in the `dir` directory. Here is what it looks
 like:
 
 ![Email preview](https://s3-eu-west-1.amazonaws.com/sentisis-images/github_public/react-emails/email-preview.png)
@@ -46,7 +46,7 @@ data. It returns a promise that resolves to the full HTML template as a string.
 const createEmail = require('react-emails-example');
 
 const data = {
-  name: 'Alberto',
+  name: 'Vasilenka',
   title: 'Demo email',
 };
 
@@ -62,5 +62,6 @@ createEmail(data)
  [react-create-app]: https://github.com/facebookincubator/create-react-app
  [react-create-app-guide]: https://facebook.github.io/create-react-app/docs/getting-started
  [metaweather]: https://www.metaweather.com/api/
+ [react-html-email]: https://github.com/chromakode/react-html-email
 
 
