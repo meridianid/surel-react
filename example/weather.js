@@ -1,6 +1,12 @@
 const fs = require('fs');
-
+const path = require('path');
 const fetch = require('node-fetch');
+
+const OUTPUT_DIR = path.resolve(__dirname + '/../dist/');
+
+if (!fs.existsSync(OUTPUT_DIR)){
+  fs.mkdirSync(OUTPUT_DIR);
+}
 
 /**
  * You can also install the package as a module and require it.
@@ -31,7 +37,7 @@ function getWeatherInMadrid() {
 
 function saveEmail(email) {
   return new Promise((resolve, reject) => {
-    fs.writeFile('weather.html', email, (err) => {
+    fs.writeFile( OUTPUT_DIR + '/weather.html', email, (err) => {
       if (err) return reject(err);
       return resolve();
     });
@@ -47,5 +53,8 @@ getWeatherInMadrid()
     // choiche.
     // For this example we are just writing the result to disk.
     return saveEmail(email);
-  });
+  })
+  .catch(err =>
+    console.log(err)
+  );
 

@@ -21,7 +21,8 @@
     "build": "NODE_ENV=production babel src --out-dir lib",
     "start": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "example": "node example/weather.js"
   },
   "browserslist": [
     ">0.2%",

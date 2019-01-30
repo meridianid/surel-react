@@ -1,5 +1,6 @@
 # Surel, with React.js
 > Generating Emails with React
+
 This is an example project you can use to generate emails with React. You can start by reading the article [here](https://building.lang.ai/how-to-build-emails-with-react-fcf941b125d1).
 
 
@@ -16,7 +17,15 @@ $ npm run build
 $ node example/weather.js
 ```
 
-The result html will be saved in the working directory. Here is what it looks
+or if you are using yarn
+
+```
+$ yarn
+$ yarn build
+$ yarn example
+```
+
+The result html will be saved in the emails directory. Here is what it looks
 like:
 
 ![Email preview](https://s3-eu-west-1.amazonaws.com/sentisis-images/github_public/react-emails/email-preview.png)
@@ -49,10 +58,9 @@ createEmail(data)
 
 - - - - - - - - - -
 
- [article]: https://building.sentisis.com/
- [langai]: https://building.lang.ai/
+ [article]: https://building.lang.ai/how-to-build-emails-with-react-fcf941b125d1
  [react-create-app]: https://github.com/facebookincubator/create-react-app
- [react-create-app-guide]: https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md
+ [react-create-app-guide]: https://facebook.github.io/create-react-app/docs/getting-started
  [metaweather]: https://www.metaweather.com/api/
 
 
